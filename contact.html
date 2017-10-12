@@ -1,44 +1,67 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  <style>
+<meta charset="utf-8">
+  <title>MY PAGE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+<style>
+
+body {
+      background-image: url("https://pbs.twimg.com/media/B4nutPRCIAEpA0J.jpg");
+}
 
 </style>
-    <meta charset="utf-8">
-    <title>MY PAGE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-  <body>
-    <header class="nav-header">
-       <div class="btn-group left">
-        <a href="./home.html" class="btn">Home</a>
-      </div>
-      <div class="btn-group right">
-        <a href="./about.html" class="btn">About</a>
-        <a href="./contact.html" class="btn">Contact</a>
+<script>
 
-    <a href="#" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </a>
+document.querySelector('.hamburger').onclick = function() {
+var mobileNav = document.querySelector('.mobile-nav');
+mobileNav.style.display = 'block';
+};
+
+document.querySelector('.mobile-nav').onclick = function() {
+var mobileNav = document.querySelector('.mobile-nav');
+mobileNav.style.display = 'none';
+}
+
+</script>
+
+<div class="mobile-nav">
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+<header class="nav-header">
+   <div class="btn-group left">
+    <a href="./home.html" class="btn">Home</a>
   </div>
-    </header>
-    <article>
+  <div class="btn-group right">
+    <a href="./about.html" class="btn">About</a>
+    <a href="./contact.html" class="btn">Contact</a>
+
+  <a href="#" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+
+  </div>
+</header>
 
 
+<div class="container">
 
-      <div>
-        <center>
-              <img class=""ss= "cat" src="C:\Users\MAHAMMAD\Desktop\public\img\cat.jpg" width="632" height="475"/>
-      </center>
-    </div>
-    </article>
-    <footer>
+    <h1 class="h1">Contact Me</h1>
+  <div class="paragraph">  <p> Thank you for viewing my webpage <br />
+  You can reach me at mahammad1000@yahoo.com</div></p>
 
-      <p>Thanks for coming!</p>
-      <p>&copy; MSM Inc.</p>
-   </footer>
-  </body>
+</div>
+<footer>
+  <p class='copy'>Thanks for visitng!</p>
+  <p class='copy'>&copy; MSM Inc.</p>
+</footer>
+</body>
 </html>
