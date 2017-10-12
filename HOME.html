@@ -1,14 +1,39 @@
-
-  <!DOCTYPE html>
-  <meta charset="utf-8">
+<meta charset="utf-8">
   <title>MY PAGE</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
 <style>
+
 body {
-      background-image: url("C:\Users\MAHAMMAD\desktop\public\img\Kingdom of heaven.jpg");
-}</style>
+      background-image: url("https://resizing.flixster.com/VooDLBzE1T8m_-IfCejepBSZxwk=/4957x2479/v1.bjs0MDM3ODQ7ajsxNzQ2NDsxMjAwOzQ5NTc7MjQ3OQ");
+}
+
+</style>
+
+
+<div class="mobile-nav">
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+<script>
+
+document.querySelector('.hamburger').onclick = function() {
+var mobileNav = document.querySelector('.mobile-nav');
+mobileNav.style.display = 'block';
+};
+
+document.querySelector('.mobile-class="h1"nav').onclick = function() {
+var mobileNav = document.querySelector('.mobile-nav');
+mobileNav.style.display = 'none';
+}
+
+</script>
 <header class="nav-header">
    <div class="btn-group left">
     <a href="./home.html" class="btn">Home</a>
@@ -26,22 +51,16 @@ body {
   </div>
 </header>
 
-    < href="#" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
 
-  </div>
-</header>
 <div class="container">
 
-    <h1>About Me</h1>
-  <div class="paragraph">  <p>Hello! My name is Mahammad Sabutay Mammadov and I love movies</div></p>
+    <h1 class="h1">About Me</h1>
+  <div class="paragraph">  <p>Hello! My name is Mahammad Sabutay Mammadov and I like movies</div></p>
 
 </div>
 <footer>
-<p>Thanks for coming!</p>
-<p>&copy; MSM Inc.</p>
+<p class='copy'>Thanks for visitng!</p>
+<p class='copy'>&copy; MSM Inc.</p>
 </footer>
 </body>
 </html>

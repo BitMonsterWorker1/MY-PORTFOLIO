@@ -6,9 +6,34 @@
   <link rel="stylesheet" href="css/main.css">
 <style>
   body {
-    background-image: src("C:\Users\MAHAMMAD\Desktop\public\img\Lord of the rings.jpg");
+    background-image: url('https://vignette.wikia.nocookie.net/lotr/images/8/87/Ringstrilogyposter.jpg/revision/latest?cb=20070806215413');
   }
 </style>
+
+<script>
+
+document.querySelector('.hamburger').onclick = function() {
+var mobileNav = document.querySelector('.mobile-nav');
+mobileNav.style.display = 'block';
+};
+
+document.querySelector('.mobile-nav').onclick = function() {
+var mobileNav = document.querySelector('.mobile-nav');
+mobileNav.style.display = 'none';
+}
+
+</script>
+
+<div class="mobile-nav">
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
 
   <header class="nav-header">
      <div class="btn-group left">
@@ -30,13 +55,13 @@
 
       <ul>
             <li>Lord of The Rings</li>
-            <li>IronClad</li>
-            <li>Kingdom of Heaven<small></li>
+            <li>Harry Potter</li>
+            <li>Star Wars</li>
       </ul>
   </div>
     <footer>
-<p>Thanks for coming!</p>
-<p>&copy; MSM Inc.</p>
-   </footer>
+      <p class='copy'>Thanks for visitng!</p>
+      <p class='copy'>&copy; MSM Inc.</p>
+       </footer>
   </body>
 </html>
